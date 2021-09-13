@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="STISearch" version="2.5">
+
+
+	<display-name>STI Gestione</display-name>
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://java.sun.com/portlet_2_0</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-portlet_2_0.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+	<servlet>
+		<servlet-name>rest-mvc-dispatcher</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortalDelegateServlet</servlet-class>
+		<init-param>
+			<param-name>servlet-class</param-name>
+			<param-value>
+		   org.springframework.web.servlet.DispatcherServlet
+		 </param-value>
+		</init-param>
+		<init-param>
+			<param-name>sub-context</param-name>
+			<param-value>rest-mvc-dispatcher</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>rest-mvc-dispatcher</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/rest-mvc-dispatcher-servlet.xml</param-value>
+	</context-param>
+
+</web-app>

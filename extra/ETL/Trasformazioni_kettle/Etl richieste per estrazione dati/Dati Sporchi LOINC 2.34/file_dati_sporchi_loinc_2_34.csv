@@ -1,0 +1,30 @@
+LOINC NUM ITA;LOINC NUM EN;COMPONENT ITA;COMPONENT EN
+01-ago;01-ago;aciclovir;Acyclovir
+02-giu;02-giu;Almecillina;Almecillin
+03-apr;03-apr;Almecillina;Almecillin
+04-feb;04-feb;Almecillina;Almecillin
+05-set;05-set;Almecillina;Almecillin
+06-lug;06-lug;Amantadina;Amantadine
+07-mag;07-mag;amdinocillina;Amdinocillin
+08-mar;08-mar;amdinocillina;Amdinocillin
+09-gen;09-gen;amdinocillina;Amdinocillin
+10-set;10-set;amdinocillina;Amdinocillin
+11-lug;11-lug;amicacina;Amikacin
+12-mag;12-mag;amicacina;Amikacin
+13-mar;13-mar;amicacina;Amikacin
+14-gen;14-gen;amicacina;Amikacin
+15-ago;15-ago;Amoxicillina;Amoxicillin
+16-giu;16-giu;Amoxicillina;Amoxicillin
+17-apr;17-apr;Amoxicillina;Amoxicillin
+18-feb;18-feb;Amoxicillina;Amoxicillin
+20-ago;20-ago;Amoxicillina+acido clavulanico;Amoxicillin+Clavulanate
+21-giu;21-giu;Amoxicillina+acido clavulanico;Amoxicillin+Clavulanate
+22-apr;22-apr;Amoxicillina+acido clavulanico;Amoxicillin+Clavulanate
+23-feb;23-feb;Amfotericina B;Amphotericin B
+25-lug;25-lug;Amfotericina B;Amphotericin B
+26-mag;26-mag;Amfotericina B;Amphotericin B
+27-mar;27-mar;Ampicillina;Ampicillin
+28-gen;28-gen;Ampicillina;Ampicillin
+29-set;29-set;Ampicillina;Ampicillin
+30-lug;30-lug;Ampicillina;Ampicillin
+31-mag;31-mag;Ampicillina-Sulbactam;Ampicillin+Sulbactam

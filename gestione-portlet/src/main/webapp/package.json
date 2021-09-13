@@ -1,0 +1,19 @@
+{
+  "name": "sti-search",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.jsa",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-convert": "^0.1.12",
+    "grunt-template": "^1.0.0"
+  }
+}

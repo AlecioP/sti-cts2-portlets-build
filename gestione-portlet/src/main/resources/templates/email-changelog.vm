@@ -1,0 +1,7 @@
+<p>In data ${data} è stata eseguita una nuova azione su STI - Servizio Terminologico Integrato</p>
+<p>titolo: <b>${title}</b></p>
+<a href="${url}">visualizza dettagli sul portale</a>
+<br><br>
+<p>Questa è una mail generata automaticamente, si prega di non rispondere.</p>
+
+

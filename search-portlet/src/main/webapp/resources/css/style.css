@@ -1,0 +1,115 @@
+.modal-hide {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.detail-modal {
+  width: 90% !important;
+  margin-left: -45% !important;
+  max-height: 700px !important;
+}
+
+.detail-modal .modal-body {
+  height: 400px !important;
+  max-height: 400px !important;
+}
+
+.mouse-pointer {
+  cursor: pointer;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #2ecc71;
+}
+
+.red {
+  color: #F44336;
+}
+
+.td-label-detail {
+  width: 25%;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+#results-div  {
+  margin-top: 25px;
+}
+
+.flag-clickable {
+  cursor: pointer;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-0 {
+  margin-left: 0px;
+}
+
+.width-99, .aui input.width-99 {
+  width: 99%;
+}
+
+@media (min-width: 1200px) {
+  .row-fluid [class*="span"].margin-left-10:first-child {
+    margin-left: 10px;
+  }
+}
+
+.table-condensed td.padding-left-30 {
+  padding-left: 30px;
+}
+
+.table-condensed td.padding-left-60 {
+  padding-left: 60px;
+}
+
+.table-condensed td.padding-left-90 {
+  padding-left: 90px;
+}
+
+.table-condensed td.padding-left-120 {
+  padding-left: 120px;
+}
+
+.table-condensed td.padding-left-150 {
+  padding-left: 150px;
+}
+
+.table th.text-center {
+  text-align: center;
+}
+
+.aui .table-striped.table-sti tbody>tr.success:nth-child(odd)>td,
+.aui .table-striped.table-sti tbody>tr.success:nth-child(odd)>th,
+.aui .table.table-sti tbody tr.success>td {
+    background-color: #dff0d8;
+}
+
+.redirect-to {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.form-control.max-width {
+  width: auto;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-filter-template {
+  width: 100%;;
+}

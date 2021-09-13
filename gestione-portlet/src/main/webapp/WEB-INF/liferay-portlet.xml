@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>sti-gestione</portlet-name>
+		<icon>/icon.png</icon>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+
+		<header-portlet-css>/resources/libs/flags/flags.css</header-portlet-css>
+		<header-portlet-css>http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css</header-portlet-css>
+
+		<header-portlet-css>/resources/css/style.css</header-portlet-css>
+
+
+		<header-portlet-javascript>/resources/libs/jquery-3.1.1.min.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/libs/noty-2.3.10/packaged/jquery.noty.packaged.min.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/libs/vue.min.js</header-portlet-javascript>
+		<header-portlet-javascript>https://cdn.jsdelivr.net/vue.resource/1.2.1/vue-resource.min.js</header-portlet-javascript>
+		<header-portlet-javascript>https://cdn.jsdelivr.net/vue.i18n/4.9.0/vue-i18n.min.js</header-portlet-javascript>
+
+		<header-portlet-javascript>/resources/libs/blockui-2.70/jquery.blockUI.js</header-portlet-javascript>
+
+		<header-portlet-javascript>/resources/libs/lodash.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/libs/bootstrap-modal.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/libs/bootstrap-tooltip.js</header-portlet-javascript>
+
+		<header-portlet-javascript>/resources/js/set-environment.jsp</header-portlet-javascript>
+
+		<header-portlet-javascript>/resources/js/LangProperties.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/js/Properties.js</header-portlet-javascript>
+		<header-portlet-javascript>/resources/js/app.js</header-portlet-javascript>
+	</portlet>
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>cross-mapping-sti</role-name>
+		<role-link>CrossMappingSTI</role-link>
+	</role-mapper>
+	
+	
+</liferay-portlet-app>

@@ -1,0 +1,129 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+applicationSuite: sti
+categories:
+  - data-collection
+  - data-visualization
+description:
+  it:
+    features:
+      - Upload Codifiche
+      - Visualizzazione Codifiche
+      - Mapping Codifiche
+      - Esportazione Codifiche
+    genericName: Servizio Terminologico Integrato
+    localisedName: STI
+    longDescription: |
+      STI è un Servizio Terminologico Integrato basato sul protocollo standard
+
+      Common Terminology Services - Release 2 (CTS2) di HL7, finalizzato a
+
+      fornire supporto a Regioni, Province Autonome e professionisti della
+
+      salute, per la gestione integrata dei sistemi di codifica previsti
+
+      nell’ambito del Fascicolo Sanitario Elettronico e disciplinati dal DPCM n.
+
+      178/2015 “Regolamento in materia di fascicolo sanitario elettronico.
+
+
+
+      Un servizio terminologico integrato (o server terminologico) è una 
+
+      componente software integrata, eventualmente con altri servizi, che 
+
+      permette l’accesso centralizzato al contenuto terminologico dei sistemi 
+
+      di codifica utilizzati in ambito medico-sanitario (nel caso specifico) e 
+
+      fornisce servizi di tipo terminologico (consultazione, ricerca,  mapping,
+
+      export, verifica degli aggiornamenti, ecc.) per altre  applicazioni che ne
+
+      facciano richiesta. Nel contesto del FSE ad esempio  un nodo regionale di
+
+      FSE potrebbe avere il proprio software per la  gestione delle codifiche
+
+      locali e potrebbe richiedere un servizio di  accesso, interrogazione,
+
+      mappatura, download, ecc. di uno specifico  sistema di codifica o parte di
+
+      esso al servizio STI. 
+
+       Il servizio STI è rivolto a due categorie principali di utenti:Operatori  sanitari, MMG e laboratoristi da un lato,  per ottenere un supporto nel  corretto uso delle terminologie per la codifica dei dati nei due  documenti previsti dalla norma (il Profilo Sanitario Sintetico e il  Referto di laboratorio); e applicazioni/servizi e referenti regionali  dall'altro, per un supporto di tipo amministrativo, per favorire  l'allineamento ai sistemi di codifica standardizzati previsti dalla  norma. 
+    shortDescription: Servizio Terminologico Integrato
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: cnr
+landingURL: 'https://github.com/italia/developers.italia.it-data.git'
+legal:
+  license: Apache-2.0
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: true
+maintenance:
+  contacts:
+    - email: maintainer@maintainer.it
+      name: maintainer
+  contractors:
+    - name: Links Management and Technology S.P.A
+      until: '2021-09-30'
+      website: 'https://www.linksmt.it/'
+  type: internal
+name: Servizio Terminologico Integrato
+platforms:
+  - linux
+  - web
+releaseDate: '2021-09-01'
+softwareType: standalone/web
+url: 'https://github.com/italia/developers.italia.it-data.git'
+usedBy:
+  - CNR
+dependsOn:
+  open:
+    - name: JDK
+      optional: false
+      version: ' 1.7'
+      versionMax: ''
+      versionMin: ''
+    - name: PostgresSQL
+      optional: false
+      version: '9.6'
+      versionMax: ''
+      versionMin: ''
+    - name: Liferay
+      optional: false
+      version: liferay-portal-6.2-ce-ga6
+      versionMax: ''
+      versionMin: ''
+    - name: Solr
+      optional: false
+      version: ''
+      versionMax: ''
+      versionMin: 6.3.0
+    - name: Pentaho Data Integration
+      optional: false
+      version: pdi-ce-5.4.0.1-130
+      versionMax: ''
+      versionMin: ''
+    - name: virtuoso
+      optional: false
+      version: ''
+      versionMax: ''
+      versionMin: ''

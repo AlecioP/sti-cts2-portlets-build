@@ -1,0 +1,221 @@
+
+<root available-locales="it_IT" default-locale="it_IT">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="code_system" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Code System]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="versione" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Versione (Valore)]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="versione_label" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Versione (Label)]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="versione_precedente" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Versione precedente (Valore)]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="versione_precedente_label" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Versione precedente (Label)]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="data_creazione" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Data creazione]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="codici_aggiunti" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Codici aggiunti]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="codici_rimossi" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Codici rimossi]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="totale_codici_importati" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Totale codici importati con la versione attuale]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="codici_modificati" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Codici modificati]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" multiple="false" name="tipo" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+		<dynamic-element name="option7749" type="option" value="STANDARD_NATIONAL">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[Standard Nazionale]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option7750" type="option" value="LOCAL">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[Locale]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option7751" type="option" value="VALUE_SET">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[ValueSet]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option7752" type="option" value="MAPPING">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[Mapping]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Tipo Elemento]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[[""]]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" multiple="false" name="categoria_changelog" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+		<dynamic-element name="option9714" type="option" value="CodeSytem">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[CodeSytem]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option9715" type="option" value="ValueSet">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[ValueSet]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option9716" type="option" value="Mapping">
+			<meta-data locale="it_IT">
+				<entry name="label">
+					<![CDATA[Mapping]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Categoria Changelog]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[[""]]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="lingue_importate" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+		<meta-data locale="it_IT">
+			<entry name="label">
+				<![CDATA[Lingue importate]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>
