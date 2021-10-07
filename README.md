@@ -31,7 +31,7 @@ La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare
 
 
 ### Descrizione Repository
-Questo repositorycontiene il modulo parent sti-cts2-portlets-build e i seguenti moduli figli
+Questo repository contiene il modulo parent sti-cts2-portlets-build e i seguenti moduli figli
 
 - Nel repository è presente la folder "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche.
 
@@ -147,8 +147,8 @@ Per l'installazione degli applicativi si demanda alla documentazione ufficiale
 - solr-6.3.0 [https://archive.apache.org/dist/lucene/solr/]
 - Pentaho Data Integration: pdi-ce-5.4.0.1-130 [https://sourceforge.net/projects/pentaho/files/Data%20Integration/5.4/]
 - Virtuoso 07.20.3233
-- sti-cts2-framework-1.2.0.FINAL **[LINK_AL_REPO] **
-- sti-service **[LINK_AL_REPO] **
+- sti-cts2-framework-1.2.0.FINAL [https://github.com/iit-rende/sti-cts2-framework]
+- sti-service [https://github.com/iit-rende/sti-service]
 
 
 
