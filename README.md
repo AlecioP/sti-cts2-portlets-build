@@ -2,7 +2,7 @@
 
 
 
-# Sistema Terminologico Integrato (Portale) 
+# Servizio Terminologico Integrato (Portale) 
 
 ### Nome del modulo: sti-cts2-portlets-build
 
@@ -18,7 +18,7 @@
 
 
 
-![gestione-portlet](screenshot\home.png)
+![gestione-portlet](screenshot/home.png)
 
 
 ### Descrizione
@@ -31,13 +31,13 @@ La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare
 
 
 ### Descrizione Repository
-Questo reposotory contiene il modulo parent sti-cts2-portlets-build e i seguenti moduli figli
+Questo repositorycontiene il modulo parent sti-cts2-portlets-build e i seguenti moduli figli
 
 - Nel repository è presente la folder "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche.
 
   
 
-![struttura-template](screenshot\struttura-template.png)
+![struttura-template](screenshot/struttura-template.png)
 
 
 
@@ -49,7 +49,7 @@ Questo reposotory contiene il modulo parent sti-cts2-portlets-build e i seguenti
 	
 	
 	
-	![gestione-portlet](screenshot\gestione-portlet.png)
+	![gestione-portlet](screenshot/gestione-portlet.png)
 
 
 
@@ -66,7 +66,7 @@ Questo reposotory contiene il modulo parent sti-cts2-portlets-build e i seguenti
 	
 	
 	
-	![LIsta Risultati](screenshot\search-portlet.png)
+	![LIsta Risultati](screenshot/search-portlet.png)
 
 
 
@@ -74,7 +74,7 @@ Questo reposotory contiene il modulo parent sti-cts2-portlets-build e i seguenti
 
 
 
-![Dettaglio](screenshot\search-portlet-dettaglio.png)
+![Dettaglio](screenshot/search-portlet-dettaglio.png)
 
 
 
@@ -141,20 +141,20 @@ Prima di procedere al download dei sorgenti per il corretto funzionamento occorr
 Per l'installazione degli applicativi si demanda alla documentazione ufficiale
 
 - SO AlmaLinuxOS [https://almalinux.org/it/]
-- JDK 1.7 [https://www.oracle.com/it/java/technologies/javase/javase7-archive-downloads.html]
+- JDK 1.8 [https://www.oracle.com/it/java/technologies/javase/javase8-archive-downloads.html]
 - Postgres 9.6 [https://www.postgresql.org/ftp/source/]
 - liferay-portal-6.2-ce-ga6 [https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.5%20GA6/]
 - solr-6.3.0 [https://archive.apache.org/dist/lucene/solr/]
 - Pentaho Data Integration: pdi-ce-5.4.0.1-130 [https://sourceforge.net/projects/pentaho/files/Data%20Integration/5.4/]
-- **virtuoso** **[TODO]**
+- Virtuoso 07.20.3233
 - sti-cts2-framework-1.2.0.FINAL **[LINK_AL_REPO] **
 - sti-service **[LINK_AL_REPO] **
 
 
 
 ## Installazione 
-Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare configurare e deployare i moduli dei reposotory [sti-cts2-framework-1.2.0.FINAL e sti-service]
-Per l'installazione degli applicativi [AlmaLinuxOS, JDK 1.7, Postgres 9.6, liferay-portal-6.2-ce-ga6,solr-6.3.0] si rimanda alla documentazione ufficiale.
+Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare configurare e deployare i moduli dei repository[sti-cts2-framework-1.2.0.FINAL e sti-service]
+Per l'installazione degli applicativi [AlmaLinuxOS, JDK 1.8, Postgres 9.6, liferay-portal-6.2-ce-ga6,solr-6.3.0] si rimanda alla documentazione ufficiale.
 Per quanto riguarda [framework cts2, sti-service] l'installazione è descritta nei repository di riferimento.
 
 
@@ -234,7 +234,7 @@ Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica dell
 
 
 
-<img src="screenshot\liferay1.png" alt="liferay1" style="zoom:75%;" />
+<img src="screenshot/liferay1.png" alt="liferay1" style="zoom:75%;" />
 
 
 
@@ -242,7 +242,7 @@ Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica dell
 
 Configurazione visualizzazione web content
 
-<img src="screenshot\liferay2.png" alt="liferay2" style="zoom:65%;" />
+<img src="screenshot/liferay2.png" alt="liferay2" style="zoom:65%;" />
 
 
 
@@ -298,7 +298,7 @@ e le 2 portlet saranno pronte per essere utilizzate sul portale Liferay
 
 
 
-![infrasttuttura](screenshot\infrasttuttura.png)
+![infrasttuttura](screenshot/infrasttuttura.png)
 
 
 
