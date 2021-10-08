@@ -21,7 +21,9 @@
 ![gestione-portlet](screenshot/home.png)
 
 
+
 ### Descrizione
+
 Il progetto è finalizzato a fornire un servizio terminologico integrato in ambito sanitario, di supporto alle Regioni e alle Province Autonome per la gestione e l’utilizzo dei sistemi di codifica previsti nell’ambito del FSE. 
 La piattaforma consente di integrare, normalizzare ed indicizzare le informazioni riguardanti diagnosi e sintomi, procedure, misure, osservazioni cliniche, principi attivi e farmaci, presenti in sistemi di codifica nazionali e internazionali.
 La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare e navigare), e gestire, secondo le specifiche del protocollo HL7 CTS-2, le informazioni concettuali e semantiche contenute nei sistemi di codifica LOINC, ICD9-CM, AIC e ATC, nonché nei value set messi a disposizione dal committente, effettuare l’esportazione dei dati, effettuare query di tipo semantico, mantenere il versioning delle risorse, e facilitare il mapping tra le diverse codifiche.
@@ -31,9 +33,9 @@ La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare
 
 
 ### Descrizione Repository
-Questo repository contiene il modulo parent sti-cts2-portlets-build e i seguenti moduli figli
+Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i seguenti moduli child
 
-- Nel repository è presente la folder "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche.
+- Nel repository è presente la folder "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche. Quindi Dopo aver avviato Liferay servirà creare una Struttura e un Template utilizzando il codice contenuto nel file indicati. Per maggiori dettagli vedere la sezione "Configurazione Ambiente"
 
   
 
@@ -45,7 +47,7 @@ Questo repository contiene il modulo parent sti-cts2-portlets-build e i seguenti
 	
 	 La parte FE della portlet è scritta in vue.js
 	
-	La parte di gestione codifiche permette il caricamento dei dati attraverso gli appositi tab e il mapping tra codifiche, ovvero la possibilità che una volta caricate 2 o più codifiche sia possibile collegarle tra loro attraverso dei campi in comune
+	La portlet di gestione codifiche permette il caricamento dei dati attraverso gli appositi tab e il mapping tra codifiche, ovvero la possibilità che una volta caricate 2 o più codifiche sia possibile collegarle tra loro attraverso dei campi in comune
 	
 	
 	
@@ -61,8 +63,10 @@ Questo repository contiene il modulo parent sti-cts2-portlets-build e i seguenti
 	
 	La parte FE della portlet è scritta in vue.js
 	
-	La ricerca sulle codifiche memorizzate a sistema viene effettuata in modalità Full Text, ovvero scrivendo in una apposita area di ricerca un termine, un testo o un codice.
-	E’ inoltre possibile filtrare la ricerca, limitandola ad un singolo sistema di codifica oppure ricercare su più o su tutte le codifiche contemporaneamente. Nel caso di ricerca su un singolo sistema di codifica, è possibile applicare dei filtri specifici su uno o più campi della struttura dati (ove previsto dal punto di vista funzionale).
+	La ricerca sulle codifiche memorizzate nel sistema viene effettuata in modalità Full Text, ovvero scrivendo in una apposita area di ricerca un termine, un testo o un codice.
+	E’ inoltre possibile filtrare la ricerca, limitandola ad un singolo sistema di codifica oppure ricercare su più codifiche contemporaneamente. 
+	
+	Nel caso di ricerca su un singolo sistema di codifica, è possibile applicare dei filtri specifici su uno o più campi della struttura dati (ove previsto dal punto di vista funzionale).
 	
 	
 	
@@ -142,6 +146,7 @@ Per l'installazione degli applicativi si demanda alla documentazione ufficiale
 
 - SO AlmaLinuxOS [https://almalinux.org/it/]
 - JDK 1.8 [https://www.oracle.com/it/java/technologies/javase/javase8-archive-downloads.html]
+- Maven 3.6.3 [https://maven.apache.org/docs/3.6.3/release-notes.html] 
 - Postgres 9.6 [https://www.postgresql.org/ftp/source/]
 - liferay-portal-6.2-ce-ga6 [https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.5%20GA6/]
 - solr-6.3.0 [https://archive.apache.org/dist/lucene/solr/]
@@ -153,23 +158,23 @@ Per l'installazione degli applicativi si demanda alla documentazione ufficiale
 
 
 ## Installazione 
-Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare configurare e deployare i moduli dei repository[sti-cts2-framework-1.2.0.FINAL e sti-service]
+Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare configurare e deployare i moduli dei repository [**sti-cts2-framework-1.2.0.FINAL** e **sti-service**]
 Per l'installazione degli applicativi [AlmaLinuxOS, JDK 1.8, Postgres 9.6, liferay-portal-6.2-ce-ga6,solr-6.3.0] si rimanda alla documentazione ufficiale.
-Per quanto riguarda [framework cts2, sti-service] l'installazione è descritta nei repository di riferimento.
+Per quanto riguarda [**framework cts2, sti-service**] l'installazione è descritta nei repository di riferimento.
 
 
 
 ## Configurazione Ambiente
 
-nel file /liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/setenv.sh va configurato il parh del file di prop dell'applicativo
+nel file PATH_LIFERAY/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/setenv.sh va configurato il path del file di prop dell'applicativo con la seguente istruzione
 
-export STI_CTS2_CONFIG="/PATH/configurazione/sti-cts2.properties".
+**export STI_CTS2_CONFIG="/PATH/configurazione/sti-cts2.properties"**
 
-Un template del file di pro è presente nel repository **..cts2-portlets-build\extra\config\sti-dev.properties**
+Un template del file di prop è presente nel repository **..cts2-portlets-build\extra\config\sti-dev.properties**
 
 ​	
 
-- proprietà: le proprietà da settare nel file sono le seguenti (i valori sono puramente di test)
+- **proprietà**: le proprietà da settare nel file sono le seguenti (i valori sono puramente di test)
 
 ```sh
 # CONNESSIONE AL DATABASE
@@ -228,7 +233,7 @@ kitchen.job.mapping.atc.aic=/opt/sti/ETL/Trasformazioni_kettle/ATC_AIC/POPOLA_FA
 
 
 
-- Liferay: Dopo aver installato Liferay è necessario creare la struttura e il template che verranno applicati ai web content visibili nella pagina "History - Aggiornamento" del portale. In questa sezione verranno riportati i log delle attività svolte sulle codifiche (Importazione )
+- **Liferay**: Dopo aver installato Liferay è necessario creare la struttura e il template che verranno applicati ai web content visibili nella pagina "History - Aggiornamento" del portale. In questa sezione verranno riportati i log delle attività svolte sulle codifiche (Importazione )
 
 Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica delle strutture e template e la screenshot della configurazione lato frontend per la visualizzazione dei contenuti web di liferay
 
@@ -240,7 +245,13 @@ Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica dell
 
 
 
-Configurazione visualizzazione web content
+Una volta definita la struttura e il modello va creata una pagina su liferay e successivamente va posizionato in pagina la componente "Aggregatore Risorse". Per la corretta visualizzazione dei web content va configurata nel seguente modo 
+
+Tipo Risorsa: Contenuto Web
+
+Sottotipo Contenuto Web: selezionare la struttura creata al punto precedente [changelog ]
+
+
 
 <img src="screenshot/liferay2.png" alt="liferay2" style="zoom:65%;" />
 
@@ -256,7 +267,7 @@ Successivamente vanno deployare le portlet e posizionate in pagina.
 
   la location del file di properties per kettle su sistema linux è di default è "/home/USERNAME/.kettle/**kettle.properties**" 
 
-  nel File vanno settate le seguenti prop per la connessione adl DB di staging
+  nel File vanno settate le seguenti prop per la connessione al DB di staging
 
   
 
