@@ -299,9 +299,9 @@ Il valore per la prop "**sti.group.id**" si può recuperare dalla url generata d
 
 
 
-il valore per la prop "sti.changelog.user.id" si può recuperare dalla url che viene generata da lifeary in caso di modifica di un utente
+il valore per la prop "sti.changelog.user.id" si può recuperare dalla url che viene generata da lifeary in caso di modifica di un utente.
 
-quindi dovrà essere creato un utente ad esempio "changeloguser" al quale assegneremo il ruolo "**ChangelogAlert**" creato in precedenza ed entrando in edit si potrà recuperare il valore relativo all'id utente
+Quindi dovrà essere creato un utente ad esempio "changeloguser" al quale assegneremo il ruolo "**ChangelogAlert**" (che andremo a creare di seguito) ed entrando in edit si potrà recuperare il valore relativo all'id utente
 
 
 
@@ -321,7 +321,7 @@ quindi dovrà essere creato un utente ad esempio "changeloguser" al quale assegn
 
 Al passo successivo va creato un ruolo su Liferay da assegnare agli utenti che dovranno ricevere un alert (email) ogni volta che viene effettuata una modifica e quindi viene generato un nuovo changelog.
 
-Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti
+Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti e va associato all'utente precedentemente creato
 
 
 
