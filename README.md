@@ -233,15 +233,42 @@ kitchen.job.mapping.atc.aic=/opt/sti/ETL/Trasformazioni_kettle/ATC_AIC/POPOLA_FA
 
 
 
-- **Liferay**: Dopo aver installato Liferay è necessario creare la struttura e il template che verranno applicati ai web content visibili nella pagina "History - Aggiornamento" del portale. In questa sezione verranno riportati i log delle attività svolte sulle codifiche (Importazione )
+- **Liferay**: Dopo aver installato Liferay è necessario creare la folder "**changelog**" e la struttura con il relativo template che verranno applicati ai web content visibili nella pagina "History - Aggiornamento" del portale. In questa sezione verranno riportati i log delle attività svolte sulle codifiche (Importazione )
 
-Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica delle strutture e template e la screenshot della configurazione lato frontend per la visualizzazione dei contenuti web di liferay
+Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica della folder e della strutture e template e la screenshot della configurazione lato frontend per la visualizzazione dei contenuti web di liferay
+
+
+
+<img src="screenshot/liferay0.png" alt="/liferay0.png" style="zoom:75%;" />
+
+
+
+
 
 
 
 <img src="screenshot/liferay1.png" alt="liferay1" style="zoom:75%;" />
 
 
+
+
+
+La folder e la struttura creata vengono usato dal sistema per a gestione e visualizzazione delle informazioni di changelog. Gli id di queste 2 componenti vanno settate nel file di prop visto in precedenza. Le prop di riferimento sono
+
+sti.changelog.folder.id=
+sti.changelog.structure.id=
+
+il folderId si può recuperare direttamente dalla url visualizzata passando il mause sopra la folder appena creata
+
+<img src="screenshot/liferay5.png" alt="liferay5" style="zoom:75%;" />
+
+
+
+mentre per lo structureId si può recuperare direttamente dalla lista delle strutture su Liferay
+
+
+
+<img src="screenshot/liferay6.png" alt="liferay6" style="zoom:75%;" />
 
 
 
@@ -258,6 +285,64 @@ Sottotipo Contenuto Web: selezionare la struttura creata al punto precedente [ch
 
 
 Successivamente vanno deployare le portlet e posizionate in pagina.
+
+
+
+
+
+Di seguito viene descritto come recuperare i valori per le prop "**sti.group.id**" e "**sti.changelog.user.id**"
+
+
+
+Il valore per la prop "**sti.group.id**" si può recuperare dalla url generata da liferay accedendo al pannello di controllo come nella screen seguente
+
+<img src="screenshot/liferay7.png" alt="/liferay7.png" style="zoom:75%;" />
+
+
+
+
+
+il valore per la prop "sti.changelog.user.id" si può recuperare dalla url che viene generata da lifeary in caso di modifica di un utente
+
+quindi dovrà essere creato un utente ad esempio "changeloguser" al quale assegneremo il ruolo "**ChangelogAlert**" creato in precedenza ed entrando in edit si potrà recuperare il valore relativo all'id utente
+
+
+
+
+
+<img src="screenshot/liferay9.png" alt="/liferay9.png" style="zoom:75%;" />
+
+
+
+
+
+<img src="screenshot/liferay8.png" alt="/liferay8.png" style="zoom:75%;" />
+
+
+
+
+
+Al passo successivo va creato un ruolo su Liferay da assegnare agli utenti che dovranno ricevere un alert (email) ogni volta che viene effettuata una modifica e quindi viene generato un nuovo changelog.
+
+Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti
+
+
+
+<img src="screenshot/liferay3.png" alt="liferay3" style="zoom:65%;" />
+
+
+
+
+
+<img src="screenshot/liferay4.png" alt="liferay4" style="zoom:65%;" />
+
+
+
+
+
+
+
+
 
 
 
@@ -287,7 +372,7 @@ A questo punto si considera un ambiente configurato e con liferay correttamente 
 Per la build i comandi da lanciare sono i seguenti (scaricare i sorgenti, entrare nella folder del progetto e lanciare il comando seguente per generale la build). La build è possibile lanciarla anche su uno solo dei sotto moduli (Portlet)
 
 ```sh
-git clone https://...
+git clone https://github.com/iit-rende/sti-cts2-portlets-build.git
 cd cts2-portlets-build
 mvn clean install
 ```
