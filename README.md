@@ -253,10 +253,9 @@ Di seguito la screenshot lato pannello di controllo per l'aggiunta/modifica dell
 
 
 
-La folder e la struttura creata vengono usato dal sistema per a gestione e visualizzazione delle informazioni di changelog. Gli id di queste 2 componenti vanno settate nel file di prop visto in precedenza. Le prop di riferimento sono
+La folder e la struttura creata vengono usato dal sistema per a gestione e visualizzazione delle informazioni di changelog. Gli id di queste 2 componenti vanno settate nel file di prop visto in precedenza. 
 
-sti.changelog.folder.id=
-sti.changelog.structure.id=
+Le prop di riferimento sono "**sti.changelog.folder.id**" e "**sti.changelog.structure.id**"
 
 il folderId si può recuperare direttamente dalla url visualizzata passando il mause sopra la folder appena creata
 
@@ -285,8 +284,6 @@ Sottotipo Contenuto Web: selezionare la struttura creata al punto precedente [ch
 
 
 Successivamente vanno deployare le portlet e posizionate in pagina.
-
-
 
 
 
