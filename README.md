@@ -155,7 +155,7 @@ Per la loro installazione si demanda alla documentazione ufficiale
 - liferay-portal-6.2-ce-ga6 [https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.5%20GA6/]
 - solr-6.3.0 [https://archive.apache.org/dist/lucene/solr/]
 - Pentaho Data Integration: pdi-ce-5.4.0.1-130 [https://sourceforge.net/projects/pentaho/files/Data%20Integration/5.4/]
-- Virtuoso 07.20.3233
+- Virtuoso 7.2 [http://vos.openlinksw.com/owiki/wiki/VOS/VOSDownload]
 - sti-cts2-framework [https://github.com/iit-rende/sti-cts2-framework]
 - sti-service [https://github.com/iit-rende/sti-service]
 
@@ -387,6 +387,38 @@ mvn clean install
 Una volta eseguita la build dei moduli bisognerà effettuare il deployment dei 2 war generati sotto ..**.liferay/deploy**  e le 2 portlet saranno pronte per essere utilizzate sul portale Liferay
 
 
+
+## Virtuoso
+
+Per l'installazione di virtuoso fare riferimento al seguente link http://wikis.openlinksw.com/VirtuosoWikiWeb/VirtuosoInstallUnixPE
+
+Dalla URL **..TODO_URL_DOWNLOAD\virtuoso\DUMP_VIRTUOSO **, è possibile scaricare il dump di virtuoso che verrà utilizzato nella procedura di import.
+
+Per quanto riguarda virtuoso bisogna importare il DB attraverso la seguente procedura
+
+Collegarsi a virtuoso al seguente link http://URL_VIRTUOSO/conductor/ ed eseguire i seguenti passaggi
+
+
+
+1. Arrestare il server Virtuoso
+
+2. Copiare il file virtuoso.db dalla cartella db del server Virtuoso in una posizione di backup
+
+3. Eliminare il file virtuoso.db.
+
+4. Dal Terminale accedere alla posizione della cartella db del server Virtuoso dove troveremo i file *.bp
+
+5. Digitare il seguente comando nel Terminale: **virtuoso-t +restore-backup prefix***
+
+6. Una volta terminato il processo, avvia il server Virtuoso. 
+
+*****il valore per **prefix** è **test** (questo valore è stato usato la creazione del dump del DB)
+
+
+
+Il seguente link contiene la prcedura completa di import ed export del DB su virtuoso
+
+http://dhevasenapathi.blogspot.com/2013/09/backup-and-restoring-of-virtuoso.html
 
 
 
