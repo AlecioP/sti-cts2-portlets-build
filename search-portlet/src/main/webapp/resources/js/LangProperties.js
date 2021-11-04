@@ -153,6 +153,12 @@ var locales = {
       labelInclusions: 'Inclusions',
       labelExclusions: 'Exclusions',
       labelNotes: 'Notes',
+    },
+    valueset: {
+        labelOid: 'OID',
+        labelName: 'Name of the Value Set',
+        labelVersion: 'Version of the Value Set',
+        labelDisplayName : "Display Name",
     }
   },
   it: {
@@ -309,6 +315,12 @@ var locales = {
       labelInclusions: 'Inclusioni',
       labelExclusions: 'Esclusioni',
       labelNotes: 'Note',
+    },
+    valueset: {
+        labelOid: 'OID',
+        labelName: 'Nome del Value Set',
+        labelVersion: 'Versione del Value Set',
+        labelDisplayName : "Nome da Visualizzare",
     }
   }
 };

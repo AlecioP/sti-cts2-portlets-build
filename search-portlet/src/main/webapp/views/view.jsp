@@ -2149,19 +2149,19 @@
 									<td>{{pageComponents.detailObj.resourceName }}</td>
 								</tr>
 								<tr>
-									<td class="td-label-detail"><strong>{{ $t("loinc.labelCodeSystem", lang) }} - {{ $t("message.labelOid", lang) }}</strong></td>
+									<td class="td-label-detail"><strong>{{ $t("valueset.labelOid", lang) }}</strong></td>
 									<td>{{ pageComponents.detailObj.info.csOid }}</td>
 								</tr>
 								<tr>
-									<td class="td-label-detail"><strong>{{ $t("loinc.labelCodeSystemName", lang) }}</strong></td>
+									<td class="td-label-detail"><strong>{{ $t("valueset.labelName", lang) }}</strong></td>
 									<td>{{pageComponents.detailObj.info.codeSystemName }}</td>
 								</tr>
 								<tr>
-									<td class="td-label-detail"><strong>{{ $t("loinc.labelCodeSystemVersion", lang) }}</strong></td>
+									<td class="td-label-detail"><strong>{{ $t("valueset.labelVersion", lang) }}</strong></td>
 									<td>{{pageComponents.detailObj.info.codeSystemVersion | clearVersionForView(pageComponents.detailObj.info.namespace)}}</td>
 								</tr>
 								<tr>
-									<td class="td-label-detail"><strong>{{ $t("loinc.labelDisplayName", lang) }}</strong></td>
+									<td class="td-label-detail"><strong>{{ $t("valueset.labelDisplayName", lang) }}</strong></td>
 									<td>{{ getValue(pageComponents.detailObj, pageComponents.detailObj.defLang + '.description') }}</td>
 								</tr>
 							</table>

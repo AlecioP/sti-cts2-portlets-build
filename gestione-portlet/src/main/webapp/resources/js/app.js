@@ -510,7 +510,8 @@ $(document).ready(function() {
 					&& self.localCodificationOid!=null
 					&& self.localCodificationOid!=""
 					&& !_.startsWith(self.localCodificationOid,self.prefxDominioSalute)){
-				oid = self.localCodificationOidPrefix+""+self.localCodificationOid;
+				//oid = self.localCodificationOidPrefix+""+self.localCodificationOid;
+				oid = self.localCodificationOid;
 			}else{ 
 				 oid = self.localCodificationOid;
 			}
