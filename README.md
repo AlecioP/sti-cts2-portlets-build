@@ -51,7 +51,7 @@ Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i segu
 
 
 
-- gestione-portlet [Portlet liferay per la gestione/importazione delle codifiche] 
+- **gestione-portlet** [Portlet liferay per la gestione/importazione delle codifiche] 
 	
 	 La parte front-end della portlet è scritta in vue.js
 	
@@ -65,9 +65,7 @@ Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i segu
 
 
 
-
-
-- search-portlet [Portlet liferay per la ricerca e visualizzazione delle codifiche importate] 
+- **search-portlet** [Portlet liferay per la ricerca e visualizzazione delle codifiche importate] 
 	
 	La parte front-end della portlet è scritta in vue.js
 	
