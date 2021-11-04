@@ -26,16 +26,24 @@
 
 Il progetto è finalizzato a fornire un servizio terminologico integrato in ambito sanitario, di supporto alle Regioni e alle Province Autonome per la gestione e l’utilizzo dei sistemi di codifica previsti nell’ambito del FSE. 
 La piattaforma consente di integrare, normalizzare ed indicizzare le informazioni riguardanti diagnosi e sintomi, procedure, misure, osservazioni cliniche, principi attivi e farmaci, presenti in sistemi di codifica nazionali e internazionali.
-La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare e navigare), e gestire, secondo le specifiche del protocollo HL7 CTS-2, le informazioni concettuali e semantiche contenute nei sistemi di codifica LOINC, ICD9-CM, AIC e ATC, nonché nei value set messi a disposizione dal committente, effettuare l’esportazione dei dati, effettuare query di tipo semantico, mantenere il versioning delle risorse, e facilitare il mapping tra le diverse codifiche.
+La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare e navigare), e gestire, secondo le specifiche del protocollo HL7 CTS-2, le informazioni concettuali e semantiche contenute in sistemi di codifica standard utilizzati a livello nazionale (es. LOINC, ICD9-CM, AIC e ATC), in sistemi di codifica utilizzati a livello locale o regionale, nonché in value set e mappature, utili ai fini del loro utilizzo nell’ambito del Fascicolo Sanitario Elettronico, effettuare l’esportazione dei dati, effettuare query di tipo semantico, mantenere il versioning delle risorse, e facilitare l’editing di mapping tra le diverse codifiche. 
 
 
+
+I moduli di progetto sono suddivisi in repository e vanno scaricati e configurati nel seguente ordine:
+
+https://github.com/iit-rende/sti-cts2-framework (repo attuale)
+
+https://github.com/iit-rende/sti-service
+
+https://github.com/iit-rende/sti-cts2-portlets-build
 
 
 
 ### Descrizione Repository
-Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i seguenti moduli child
+Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i seguenti moduli figli
 
-- Nel repository è presente la folder "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche. Quindi Dopo aver avviato Liferay servirà creare una Struttura e un Template utilizzando il codice contenuto nel file indicati. Per maggiori dettagli vedere la sezione "Configurazione Ambiente"
+- Nel repository è presente la cartella "cts2-portlets-build\extra\adt strutture e templates" contenente la struttura dati ed il template Liferay da applicare ai dati gestiti per quanto riguarda il changelog sulle codifiche. Quindi Dopo aver avviato Liferay servirà creare una Struttura e un Template utilizzando il codice contenuto nel file indicati. Per maggiori dettagli vedere la sezione "Configurazione Ambiente"
 
   
 
@@ -45,9 +53,9 @@ Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i segu
 
 - gestione-portlet [Portlet liferay per la gestione/importazione delle codifiche] 
 	
-	 La parte FE della portlet è scritta in vue.js
+	 La parte front-end della portlet è scritta in vue.js
 	
-	La portlet di gestione codifiche permette il caricamento dei dati attraverso gli appositi tab e il mapping tra codifiche, ovvero la possibilità che una volta caricate 2 o più codifiche sia possibile collegarle tra loro attraverso dei campi in comune
+	La parte di gestione codifiche permette il caricamento dei dati (sistemi di codifica, value set, file di mapping) attraverso gli appositi tab e template, l’editing di mappature tra due sistemi di codifica, ovvero la possibilità che, una volta caricate, 2 o più codifiche sia possibile correlarle tra loro tramite relazioni di equivalenza, sinonimia o altro tipo di associazione.  È possibile, inoltre, per utenti amministratori, approvare le mappature editate tramite la piattaforma.  Sono disponibili anche le funzionalità di eliminazione di una risorsa.
 	
 	
 	
@@ -61,12 +69,10 @@ Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i segu
 
 - search-portlet [Portlet liferay per la ricerca e visualizzazione delle codifiche importate] 
 	
-	La parte FE della portlet è scritta in vue.js
+	La parte front-end della portlet è scritta in vue.js
 	
-	La ricerca sulle codifiche memorizzate nel sistema viene effettuata in modalità Full Text, ovvero scrivendo in una apposita area di ricerca un termine, un testo o un codice.
-	E’ inoltre possibile filtrare la ricerca, limitandola ad un singolo sistema di codifica oppure ricercare su più codifiche contemporaneamente. 
-	
-	Nel caso di ricerca su un singolo sistema di codifica, è possibile applicare dei filtri specifici su uno o più campi della struttura dati (ove previsto dal punto di vista funzionale).
+	La ricerca sulle codifiche memorizzate a sistema viene effettuata in modalità Full Text, ovvero scrivendo in una apposita area di ricerca un termine, un testo o un codice.
+	È inoltre possibile filtrare la ricerca, limitandola ad un singolo sistema di codifica oppure ricercare su più o su tutte le codifiche contemporaneamente. Nel caso di ricerca su un singolo sistema di codifica, è possibile applicare dei filtri specifici (ricerca avanzata) su uno o più campi della struttura dati (ove previsto dal punto di vista funzionale). Sono disponibili anche le funzionalità di export delle risorse caricate nei formati JSON o CSV.
 	
 	
 	
@@ -88,7 +94,7 @@ Questo repository contiene il modulo parent **sti-cts2-portlets-build** e i segu
 
 
 
-Sviluppo Frontend (valido per entrambe le portlet)
+Sviluppo Frontend (valido per entrambe le portlet sopraelencate)
 =================
 
 Per velocizzare lo sviluppo è stato pensato di creare un piccolo ambiente che migliora l'esperienza dello sviluppatore e quindi ne minimizza le perdite di tempo.
@@ -98,15 +104,15 @@ Installazione
 
 Eseguire i seguenti passi:
 
-* installare [Node](https://nodejs.org/it/download/);
+* installare [node.js](https://nodejs.org/it/download/);
 * eseguire da linea di comando `npm install`.
 
 Esecuzione
 ----------
 
-Lanciare il comando `grunt serve` per eseguire il server e sviluppare nel modo più veloce possibile. L'applicazione sarà accessibile su [localhost:8000](http://localhost:8000/) e le modifiche fatte saranno rese immediatamente disponibili, senza la necessità di effettuare il deploy.
+Lanciare il comando `grunt serve` per eseguire il server e sviluppare nel modo più veloce possibile. L'applicazione sarà accessibile su [localhost:8000](http://localhost:8000/) e le modifiche eseguite saranno rese immediatamente disponibili, senza la necessità di effettuare il deploy.
 È importante notare che il server `Liferay` dovrà comunque essere avviato.
-È necessario [lanciare il browser in modalità non sicura](http://stackoverflow.com/a/3177718) che non fa controlli sul CORS.
+È necessario [lanciare il browser in modalità non sicura](http://stackoverflow.com/a/3177718)  in modo da non effettuare controlli sul CORS.
 
 Informazioni aggiuntive
 -----------------------
@@ -141,8 +147,8 @@ Il comando `watch` a sua volta lancia una serie di task:
 
 ## Prerequisiti
 
-Prima di procedere al download dei sorgenti per il corretto funzionamento occorre installare le seguenti.
-Per l'installazione degli applicativi si demanda alla documentazione ufficiale
+Prima di procedere al download dei sorgenti per il corretto funzionamento occorre installare le seguenti componenti applicative.
+Per la loro installazione si demanda alla documentazione ufficiale
 
 - SO AlmaLinuxOS [https://almalinux.org/it/]
 - JDK 1.8 [https://www.oracle.com/it/java/technologies/javase/javase8-archive-downloads.html]
@@ -152,21 +158,21 @@ Per l'installazione degli applicativi si demanda alla documentazione ufficiale
 - solr-6.3.0 [https://archive.apache.org/dist/lucene/solr/]
 - Pentaho Data Integration: pdi-ce-5.4.0.1-130 [https://sourceforge.net/projects/pentaho/files/Data%20Integration/5.4/]
 - Virtuoso 07.20.3233
-- sti-cts2-framework-1.2.0.FINAL [https://github.com/iit-rende/sti-cts2-framework]
+- sti-cts2-framework [https://github.com/iit-rende/sti-cts2-framework]
 - sti-service [https://github.com/iit-rende/sti-service]
 
 
 
 ## Installazione 
-Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare configurare e deployare i moduli dei repository [**sti-cts2-framework-1.2.0.FINAL** e **sti-service**]
-Per l'installazione degli applicativi [AlmaLinuxOS, JDK 1.8, Postgres 9.6, liferay-portal-6.2-ce-ga6,solr-6.3.0] si rimanda alla documentazione ufficiale.
-Per quanto riguarda [**framework cts2, sti-service**] l'installazione è descritta nei repository di riferimento.
+Per procedere alla corretta installazione dei moduli del presente repository è necessario prima scaricare, configurare e distribuire (effettuare il deployment) i moduli dei repository [**sti-cts2-framework** e sti-service]
+Per l'installazione degli applicativi [AlmaLinuxOS, JDK 1.8, Postgres 9.6, liferay-portal-6.2-ce-ga6, solr-6.3.0] si rimanda alla documentazione ufficiale.
+Per quanto riguarda [**cts2 framework, sti-service**] l'installazione è descritta nei file readme dei repository di riferimento.
 
 
 
 ## Configurazione Ambiente
 
-nel file PATH_LIFERAY/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/setenv.sh va configurato il path del file di prop dell'applicativo con la seguente istruzione
+Nel file PATH_LIFERAY/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/setenv.sh va configurato il path del file di proprietà dell'applicativo con la seguente istruzione
 
 **export STI_CTS2_CONFIG="/PATH/configurazione/sti-cts2.properties"**
 
@@ -343,13 +349,13 @@ Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti e
 
 
 
-- ETL:  Per il corretto funzionamento dell'applicativo bisogna configurare anche "Pentaho Data Integration". Quindi va scaricato PDI e vano configurate contentamente le prop relative a "# KITCHEN", dove va indicata la home di PDI e e il path delle trasformazioni che si occupano di inserire i dati in ambiente di stagin in fase di importazione. **[I sorgenti delle trasformazioni sono sotto "..\extra\ETL\Trasformazioni_kettle"] **
+- ETL:  Per il corretto funzionamento dell'applicativo bisogna configurare anche "Pentaho Data Integration". Quindi va scaricato PDI e vanno configurate correttamente le proprietà relative a "# KITCHEN", dove va indicata la home di PDI e il path delle trasformazioni che si occupano di inserire i dati in ambiente di stagin in fase di importazione. **[I sorgenti delle trasformazioni sono sotto la cartella "..\extra\ETL\Trasformazioni_kettle"] **
 
-  Dopo scaricato ed installato PDI bisogna settare le prop che verranno utilizzate dalle trasformazioni
+  Dopo aver scaricato ed installato PDI bisogna settare le prop che verranno utilizzate dalle trasformazioni
 
-  la location del file di properties per kettle su sistema linux è di default è "/home/USERNAME/.kettle/**kettle.properties**" 
+  La location del file di properties per kettle su sistema linux è di default è "/home/USERNAME/.kettle/**kettle.properties**" 
 
-  nel File vanno settate le seguenti prop per la connessione al DB di staging
+  Nel File vanno settate le seguenti prop per la connessione al DB di staging
 
   
 
@@ -365,8 +371,8 @@ Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti e
 
 Per la build del modulo è necessario scaricare e installare - Maven 3.6.3 [https://maven.apache.org/docs/3.6.3/release-notes.html] o superiore
 
-A questo punto si considera un ambiente configurato e con liferay correttamente avviato. 
-Per la build i comandi da lanciare sono i seguenti (scaricare i sorgenti, entrare nella folder del progetto e lanciare il comando seguente per generale la build). La build è possibile lanciarla anche su uno solo dei sotto moduli (Portlet)
+A questo punto si può considerare l'ambiente configurato e con liferay correttamente avviato. 
+Per la build i comandi da lanciare sono i seguenti
 
 ```sh
 git clone https://github.com/iit-rende/sti-cts2-portlets-build.git
@@ -380,8 +386,7 @@ mvn clean install
 
 ## Deploy
 
-una volta buildato i modui bisognerà deployare i 2 war genearti sotto ..**.liferay/deploy** 
-e le 2 portlet saranno pronte per essere utilizzate sul portale Liferay
+Una volta eseguita la build dei moduli bisognerà effettuare il deployment dei 2 war generati sotto ..**.liferay/deploy**  e le 2 portlet saranno pronte per essere utilizzate sul portale Liferay
 
 
 
