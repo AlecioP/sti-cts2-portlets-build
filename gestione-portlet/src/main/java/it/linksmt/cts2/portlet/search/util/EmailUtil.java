@@ -1,5 +1,7 @@
 package it.linksmt.cts2.portlet.search.util;
 
+import it.linksmt.cts2.portlet.search.StiAppConfig;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -11,30 +13,49 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import com.liferay.portal.kernel.util.PropsUtil;
+import org.apache.log4j.Logger;
+
 
 public class EmailUtil {
 
+	private static Logger log = Logger.getLogger(EmailUtil.class.getName());
 	
 	private static Session session = null;
 	
 	private static void prepare(){
-		Properties props = System.getProperties();
-
-		final String smtpHost = PropsUtil.get("sti.mail.smtp.host");
-		final String port = PropsUtil.get("sti.mail.smtp.port");
-		final String username = PropsUtil.get("sti.mail.username");
-		final String password = PropsUtil.get("sti.mail.password");
+		Properties properties = new Properties();
 		
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.host", smtpHost);
-		props.put("mail.smtp.port", port);
+		String smtpHost = StiAppConfig.getProperty("sti.mail.smtp.host");
+		String port = StiAppConfig.getProperty("sti.mail.smtp.port");
+		final String username = StiAppConfig.getProperty("sti.mail.username").replace("%40", "@");
+		final String password = StiAppConfig.getProperty("sti.mail.password");
 
-		session = Session.getInstance(props, new javax.mail.Authenticator() {
-			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(username, password);
-			}
-		});
+
+		try {
+			properties.put("mail.smtp.host", smtpHost);
+			properties.put("mail.smtp.port", port);
+			properties.put("mail.smtp.socketFactory.port", port);
+			
+			properties.put("mail.smtp.auth", "true");
+			properties.put("mail.smtp.starttls.enable", "true");
+			properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+			properties.put("mail.smtp.ssl.enable", "true");
+			properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
+			properties.put("mail.smtp.ssl.checkserveridentity", "true");
+			properties.put("mail.smtp.socketFactory.fallback", "true");
+			properties.put("mail.smtp.ssl.trust", "*");
+
+			session = Session.getInstance(properties, new javax.mail.Authenticator() {
+				@Override
+				protected PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(username, password);
+				}
+			});
+
+		}
+		catch (Exception e) {
+			log.error("createSession :: " + e.getMessage(), e);
+		}
 	}
 	
 	
