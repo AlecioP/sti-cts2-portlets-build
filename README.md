@@ -28,7 +28,8 @@ Il progetto è finalizzato a fornire un servizio terminologico integrato in ambi
 La piattaforma consente di integrare, normalizzare ed indicizzare le informazioni riguardanti diagnosi e sintomi, procedure, misure, osservazioni cliniche, principi attivi e farmaci, presenti in sistemi di codifica nazionali e internazionali.
 La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare e navigare), e gestire, secondo le specifiche del protocollo HL7 CTS-2, le informazioni concettuali e semantiche contenute in sistemi di codifica standard utilizzati a livello nazionale (es. LOINC, ICD9-CM, AIC e ATC), in sistemi di codifica utilizzati a livello locale o regionale, nonché in value set e mappature, utili ai fini del loro utilizzo nell’ambito del Fascicolo Sanitario Elettronico, effettuare l’esportazione dei dati, effettuare query di tipo semantico, mantenere il versioning delle risorse, e facilitare l’editing di mapping tra le diverse codifiche. 
 
-
+Per maggiori dettagli sulle funzionalità di STI è possibile scaricare il manuale utente  e altra documentazione di progetto al seguente link:
+http://cosenza.iit.cnr.it/repo/sti/dati_base/docs/documenti.zip
 
 I moduli di progetto sono suddivisi in repository e vanno scaricati e configurati nel seguente ordine:
 
@@ -361,9 +362,15 @@ Il Ruolo da creare è "**ChangelogAlert**" come definito nelle screen seguenti e
   DATABASE_NAME = sti_import
   PORT_NUMBER =  5432					
   DB_USER = ***						 
-  DB_PASSWORD = 			
+  DB_PASSWORD = 	
+  
+  ​		
 
+**Configurazione download codifiche**: la proprietà *filesystem.export.base.path* indica la folder dove vengono generati i file che possono essere scaricati dalla piattaforma a seguito di un importazione.  
 
+In fase di configurazione della piattaforma per poter scaricare i file relativi al dump del DB e di SOLR è importante scaricare e posizionare all'interno della folder indicata dalla proprietà *filesystem.export.base.path*  (TEMP_EXPORT)  il contenuto scaricabile al seguente link:
+http://cosenza.iit.cnr.it/repo/sti/dati_base/TEMP_EXPORT.zip
+contenente i file relativi alle codifiche.
 
 ## Build
 
@@ -392,11 +399,11 @@ Una volta eseguita la build dei moduli bisognerà effettuare il deployment dei 2
 
 Per l'installazione di virtuoso fare riferimento al seguente link http://wikis.openlinksw.com/VirtuosoWikiWeb/VirtuosoInstallUnixPE
 
-Dalla URL **..TODO_URL_DOWNLOAD\virtuoso\DUMP_VIRTUOSO **, è possibile scaricare il dump di virtuoso che verrà utilizzato nella procedura di import.
+Dalla URL http://cosenza.iit.cnr.it/repo/sti/dati_base/dump_virtuoso.zip, è possibile scaricare il dump di virtuoso che verrà utilizzato nella procedura di import.
 
-Per quanto riguarda virtuoso bisogna importare il DB attraverso la seguente procedura
+Per quanto riguarda virtuoso bisogna importare il DB attraverso la seguente procedura:
 
-Collegarsi a virtuoso al seguente link http://URL_VIRTUOSO/conductor/ ed eseguire i seguenti passaggi
+collegarsi a virtuoso al seguente link http://URL_VIRTUOSO/conductor/ ed eseguire i seguenti passaggi
 
 
 
@@ -416,7 +423,7 @@ Collegarsi a virtuoso al seguente link http://URL_VIRTUOSO/conductor/ ed eseguir
 
 
 
-Il seguente link contiene la prcedura completa di import ed export del DB su virtuoso
+Il seguente link contiene la prcedura completa di import ed export del DB su virtuoso:
 
 http://dhevasenapathi.blogspot.com/2013/09/backup-and-restoring-of-virtuoso.html
 
