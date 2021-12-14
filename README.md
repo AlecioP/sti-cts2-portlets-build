@@ -28,8 +28,8 @@ Il progetto è finalizzato a fornire un servizio terminologico integrato in ambi
 La piattaforma consente di integrare, normalizzare ed indicizzare le informazioni riguardanti diagnosi e sintomi, procedure, misure, osservazioni cliniche, principi attivi e farmaci, presenti in sistemi di codifica nazionali e internazionali.
 La piattaforma lato utente consente di importare, indicizzare, fruire (ricercare e navigare), e gestire, secondo le specifiche del protocollo HL7 CTS-2, le informazioni concettuali e semantiche contenute in sistemi di codifica standard utilizzati a livello nazionale (es. LOINC, ICD9-CM, AIC e ATC), in sistemi di codifica utilizzati a livello locale o regionale, nonché in value set e mappature, utili ai fini del loro utilizzo nell’ambito del Fascicolo Sanitario Elettronico, effettuare l’esportazione dei dati, effettuare query di tipo semantico, mantenere il versioning delle risorse, e facilitare l’editing di mapping tra le diverse codifiche. 
 
-Per maggiori dettagli sulle funzionalità di STI è possibile scaricare il manuale utente  e altra documentazione di progetto al seguente link:
-http://cosenza.iit.cnr.it/repo/sti/dati_base/docs/documenti.zip
+Per maggiori dettagli sulle funzionalità di STI è possibile scaricare il **manuale utente** al seguente link:
+http://cosenza.iit.cnr.it/repo/sti/dati_base/docs/STI_Manuale_Utente.pdf
 
 I moduli di progetto sono suddivisi in repository e vanno scaricati e configurati nel seguente ordine:
 
