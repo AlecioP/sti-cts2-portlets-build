@@ -155,7 +155,7 @@ var locales = {
       labelNotes: 'Notes',
     },
     valueset: {
-        labelOid: 'OID',
+        labelOid: 'Oid',
         labelName: 'Name of the Value Set',
         labelVersion: 'Version of the Value Set',
         labelDisplayName : "Display Name",
@@ -317,7 +317,7 @@ var locales = {
       labelNotes: 'Note',
     },
     valueset: {
-        labelOid: 'OID',
+        labelOid: 'Oid',
         labelName: 'Nome del Value Set',
         labelVersion: 'Versione del Value Set',
         labelDisplayName : "Nome da Visualizzare",

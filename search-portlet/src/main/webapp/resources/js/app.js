@@ -4454,6 +4454,8 @@ $(document).ready(function() {
         //self.mappingList = [];
 		self.navigationMode = 'mapping'; 
 		self.subNavigationMode = (subNavigationMode!==undefined?subNavigationMode:'mapping-group-1');
+		/*fix: set default value per selectedCsType*/
+		self.selectedCsType = "STANDARD_NATIONAL_STATIC";
 		
 		if(self.subNavigationMode=='mapping-group-1'){
 			self.loincSearchForm.selectedMappingStandard = 'LOINC';
