@@ -1,0 +1,844 @@
+{
+	"availableLanguageIds": [
+		"en_US"
+	],
+	"contentType": "journal",
+	"dataDefinitionFields": [
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "code_system",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Code System"
+			},
+			"localizable": true,
+			"name": "Text84357719",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "versione",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Versione (Valore)"
+			},
+			"localizable": true,
+			"name": "Text93578846",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "versione_label",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Versione (Label)"
+			},
+			"localizable": true,
+			"name": "Text19571253",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "versione_precedente",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Versione Precedente (Valore)"
+			},
+			"localizable": true,
+			"name": "Text98860849",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "versione_precedente_label",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Versione precedente (Label)"
+			},
+			"localizable": true,
+			"name": "Text99619841",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "data_creazione",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Data creazione"
+			},
+			"localizable": true,
+			"name": "Text06274433",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "codici_aggiunti",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Codici aggiunti"
+			},
+			"localizable": true,
+			"name": "Text76490668",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"autocomplete": false,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"ddmDataProviderInstanceOutput": [],
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "codici_rimossi",
+				"placeholder": {
+					"en_US": ""
+				},
+				"dataSourceType": "",
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Codici rimossi"
+			},
+			"localizable": true,
+			"name": "Text45298014",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"requiredErrorMessage": {
+					"en_US": ""
+				},
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"objectFieldName": "",
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "totale_codici_importati",
+				"placeholder": {
+					"en_US": ""
+				},
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {
+				"en_US": ""
+			},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Totale codici importati con la versione attuale"
+			},
+			"localizable": true,
+			"name": "Text24518796",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"requiredErrorMessage": {
+					"en_US": ""
+				},
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"objectFieldName": "",
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "codici_modificati",
+				"placeholder": {
+					"en_US": ""
+				},
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {
+				"en_US": ""
+			},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Codici modificati"
+			},
+			"localizable": true,
+			"name": "Text99992289",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"multiple": false,
+				"requiredErrorMessage": {
+					"en_US": ""
+				},
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"objectFieldName": "",
+				"ddmDataProviderInstanceOutput": [],
+				"alphabeticalOrder": false,
+				"options": {
+					"en_US": [
+						{
+							"reference": "option7749",
+							"label": "Standard Nazionale",
+							"value": "STANDARD_NATIONAL"
+						},
+						{
+							"reference": "option7750",
+							"label": "Locale",
+							"value": "LOCAL"
+						},
+						{
+							"reference": "option7751",
+							"label": "ValueSet",
+							"value": "VALUE_SET"
+						},
+						{
+							"reference": "option7752",
+							"label": "Mapping",
+							"value": "MAPPING"
+						}
+					]
+				},
+				"nativeField": false,
+				"fieldReference": "tipo",
+				"dataSourceType": [
+					"manual"
+				]
+			},
+			"defaultValue": {
+				"en_US": []
+			},
+			"fieldType": "select",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Tipo Elemento"
+			},
+			"localizable": true,
+			"name": "Select16980662",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"ddmDataProviderInstanceId": [],
+				"dataType": "string",
+				"multiple": false,
+				"requiredErrorMessage": {
+					"en_US": ""
+				},
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"objectFieldName": "",
+				"ddmDataProviderInstanceOutput": [],
+				"alphabeticalOrder": false,
+				"options": {
+					"en_US": [
+						{
+							"reference": "option9714",
+							"label": "CodeSystem",
+							"value": "CodeSystem"
+						},
+						{
+							"reference": "option9715",
+							"label": "ValueSet",
+							"value": "ValueSet"
+						},
+						{
+							"reference": "option9716",
+							"label": "Mapping",
+							"value": "Mapping"
+						}
+					]
+				},
+				"nativeField": false,
+				"fieldReference": "categoria_changelog",
+				"dataSourceType": [
+					"manual"
+				]
+			},
+			"defaultValue": {
+				"en_US": []
+			},
+			"fieldType": "select",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Categoria Changelog"
+			},
+			"localizable": true,
+			"name": "Select95847212",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		},
+		{
+			"customProperties": {
+				"labelAtStructureLevel": true,
+				"confirmationErrorMessage": {
+					"en_US": ""
+				},
+				"hideField": false,
+				"dataType": "string",
+				"tooltip": {
+					"en_US": ""
+				},
+				"requireConfirmation": false,
+				"displayStyle": "singleline",
+				"requiredErrorMessage": {
+					"en_US": ""
+				},
+				"visibilityExpression": "",
+				"fieldNamespace": "",
+				"objectFieldName": "",
+				"options": {},
+				"nativeField": false,
+				"confirmationLabel": {
+					"en_US": ""
+				},
+				"fieldReference": "lingue_importate",
+				"placeholder": {
+					"en_US": ""
+				},
+				"direction": [
+					"vertical"
+				]
+			},
+			"defaultValue": {
+				"en_US": ""
+			},
+			"fieldType": "text",
+			"indexType": "keyword",
+			"indexable": true,
+			"label": {
+				"en_US": "Lingue Importate"
+			},
+			"localizable": true,
+			"name": "Text89679227",
+			"nestedDataDefinitionFields": [],
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"tip": {
+				"en_US": ""
+			}
+		}
+	],
+	"defaultDataLayout": {
+		"dataLayoutFields": {},
+		"dataLayoutPages": [
+			{
+				"dataLayoutRows": [
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text84357719"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text93578846"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text19571253"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text98860849"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text99619841"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text06274433"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text76490668"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text45298014"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text24518796"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text99992289"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Select16980662"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Select95847212"
+								]
+							}
+						]
+					},
+					{
+						"dataLayoutColumns": [
+							{
+								"columnSize": 12,
+								"fieldNames": [
+									"Text89679227"
+								]
+							}
+						]
+					}
+				],
+				"description": {
+					"en_US": ""
+				},
+				"title": {
+					"en_US": ""
+				}
+			}
+		],
+		"dataRules": [],
+		"description": {},
+		"name": {
+			"en_US": "changelog_struct"
+		},
+		"paginationMode": "single-page"
+	},
+	"defaultLanguageId": "en_US",
+	"description": {},
+	"name": {
+		"en_US": "changelog_struct"
+	},
+	"storageType": "default"
+}
